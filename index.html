@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Maps Example</title>
-    <style>
-        .map-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .map-container iframe {
-            width: 100%;
-            max-width: 800px;
-            height: 400px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Maps Example</title>
+  <style>
+    body { font-family: sans-serif; } 
+    h2 { text-align: center; margin-top: 30px; }
+    .map-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px; /* Increased spacing */
+      padding: 15px;
+      border: 1px solid #ddd; /* Subtle border for visual separation */
+    }
+    .map-container iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+    }
+    .map-description {
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.5; /* Improved readability */
+    }
+  </style>
 </head>
 <body>
-    <h1>Embedded Google Map and map-bible.com Example</h1>
+  <h1>Exploring Maps in Different Disciplines</h1>
 
-    <div class="map-container">
-        <!-- Embedding map-bible.com -->
-        <iframe
-            width="100%"
-            height="400"
-            frameborder="0"
-            style="border:0;"
-            src="https://www.map-bible.com/"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-        ></iframe>
-    </div>
+  <div class="map-container">
+    <h2>Science</h2>
+    <iframe src="https://www.map-bible.com/"></iframe> 
+    <p class="map-description">Mapping scientific discoveries, research centers, or geographical phenomena.</p>
+  </div>
 
-    <p>This is an example of embedding a map from map-bible.com, with the iframe placed below where Google Map used to be.</p>
+  <div class="map-container">
+    <h2>History</h2>
+    <iframe src="https://www.map-bible.com/"></iframe> 
+    <p class="map-description">Visualizing historical events, migration patterns, or the rise and fall of empires.</p>
+  </div>
+
+  <div class="map-container">
+    <h2>Religion</h2>
+    <iframe src="https://www.map-bible.com/"></iframe> 
+    <p class="map-description">Illustrating the spread of religions, pilgrimage routes, or sacred sites.</p>
+  </div>
+
+  <div class="map-container">
+    <h2>Politics</h2>
+    <iframe src="https://www.map-bible.com/"></iframe> 
+    <p class="map-description">Depicting political boundaries, election results, or international conflicts.</p>
+  </div>
 </body>
 </html>
